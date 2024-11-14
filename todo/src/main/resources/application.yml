@@ -1,0 +1,5 @@
+spring:
+    data:
+        mongodb:
+            uri: mongodb+srv://kumaran_1233:apple%4018@kumaran.vuhtu.mongodb.net/test?retryWrites=true&w=majority
+            
