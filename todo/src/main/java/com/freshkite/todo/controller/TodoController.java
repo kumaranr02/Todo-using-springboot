@@ -28,19 +28,19 @@ public class TodoController {
     }
 
     @PostMapping("/todos")
-    public Todomodel postMethodName(@RequestBody Todomodel Todoentry) {
+    public Todomodel createController(@RequestBody Todomodel todo_model) {
         
-        return tservice.createService(Todoentry);
+        return tservice.createService(todo_model);
     }
 
     @PutMapping("/todos/{id}")
-    public Todomodel putMethodName(@RequestBody Todomodel Todoentry, @PathVariable String id) {
+    public Todomodel updateController(@RequestBody Todomodel todo_model, @PathVariable String id) {
         
-        return tservice.updateService(Todoentry,id);
+        return tservice.updateService(todo_model,id);
     }
 
     @DeleteMapping("/todos/{id}")
-    public String deleteMethodName(@PathVariable String id ) {
+    public String deleteController(@PathVariable String id ) {
 
         return tservice.deleteService(id);
     }
